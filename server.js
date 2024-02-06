@@ -12,12 +12,12 @@ ws.on('close', function close() {
   });
 ws.send('init message to client');
   // ส่ง data ไปที่ client เชื่อมกับ websocket server นี้
-setInterval(() => {
-    const data = {
-      posX: Math.floor((Math.random() * 800) + 1),
-      posY: Math.floor((Math.random() * 600) + 1)
-    }
-    console.log('sending to data to client:', data)
-    ws.send(JSON.stringify(data))
-  }, 5000)
+// setInterval(() => {
+//     const data = {
+//       posX: Math.floor((Math.random() * 800) + 1),
+//       posY: Math.floor((Math.random() * 600) + 1)
+//     }
+//     console.log('sending to data to client:', data)
+//     ws.send(JSON.stringify(data))
+//   }, 5000)
 });
