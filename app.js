@@ -1,7 +1,7 @@
 // ทำการเชื่อม Websocket Server ตาม url ที่กำหนด
 // var connection = new WebSocket('ws://localhost:4000')
 // var connection = new WebSocket('wss://socketsbay.com/wss/v2/1/demo/')
-var connection = new WebSocket('ws://i-ws.onrender.com')
+var connection = new WebSocket('wss://i-ws.onrender.com')
 connection.onopen = function () {
   // จะทำงานเมื่อเชื่อมต่อสำเร็จ
   console.log("connect webSocket");
