@@ -13,7 +13,7 @@ wss.on('connection', function connection(ws) { // สร้าง connection
       console.log('received: %s', message);
       clients.forEach(client => {
         if (client !== ws && client.readyState === WebSocket.OPEN) {
-          client.send("msg:"+String(message));
+          client.send(String(message));
         }
       });
     });
